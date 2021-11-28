@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	github.com/astaxie/beego v1.12.3
+	github.com/robfig/cron/v3 v3.0.1
 )
 
 require (
