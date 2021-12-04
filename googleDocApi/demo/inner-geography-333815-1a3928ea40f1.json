@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "inner-geography-333815",
+  "private_key_id": "1a3928ea40f193540141fb81262e2a32ef5f0ef2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkGJ2tCx6C8WBT\n3FDkvSvrvS0XOv6mkbmrV+BnU/1TXdXz2qhqyoN5Wqe5m/gb08zLD/fXsw67zNqL\nIlKKF21hZSjVf6nzj4GXI07NVa61aeaWK0ttDS4191lZ+ptI9EwexSV6/TH/EPr1\n5fir4VqK+BU1rVj4Cq0ybdIl7GVSZFxlqD9ANpY6HEAiZhx16qMic93elLT4JlNN\nu7FdgmYLN2ddYlN+rrBK+/uAMgSrR+lTQ7RXHRlRJpZOB8B4rZSL8DzbVycntJ3S\nWZOePK+bsc0xfoUA0Df4L0KrEXYPtvnCbdTtkD2maTU6QI8qhR6cSilYXnMBytrc\n9EqP8cyTAgMBAAECggEAPEFxvLYFiS2bIpAXADdapmC76vjVw1JlbD6Df02/Ctq9\nEqMrDrO4XVpllmloTMeUPshpSMJOWbWaVlbPGjgKCSZ9PRB41p/OhTII4Kti0OjH\nLENPmgap/lUKcVjtpndWcEISRjwtHK0eiibdDjhc6AS6vRAfSE2bVZYwAY7xkbQD\nTw/GyaAscv4vm0g2+OeFzO88CNQBdSJ17KeitVMT3whS7erBXmemqqVayilvzA6A\nu91xOeiJJHwKMj9+T775HL1f/HYRQ5wKEViTZ0Obp57VQv7HMyu1qGE5AEXrrVnn\nmllAjO4Oiac5X9wVI6i+uRxMD4CtHTq5Vla1vDGMwQKBgQDi9qTip2OSgs8sBNn/\nRVpQcTwlhVoDd+/k/PyOSREWT3n+6awbEjfxr3KF3XWLIiaFMuzQvRbGwZVTe/v0\nUgk3VfshBb104jj3sJT161wO85mUQ+MZdXpzJwKbhy4wQNX/CcDhUwd4irriXa3V\npuOWSTfVfYm2PCk9HI67UN1mcwKBgQC5FvvlQdl9/xQd+3yfYplWH5h+NkXZdIMI\nkuBQCS3t3+KeoMbwqLSwIw1oJut5Jb+WwjQBrol54MvQrxJ2IXVYpnKVzJQzE/ig\nPAPyIhMogp92ct36pS+c1s2Zf0dHml/0DHtu9VJn0TU2HgMqtCbHOkkBGuUc9eLn\nxOKo8tBZYQKBgEo0X7ZnCewV7owyzd9jGmMgkoyl68ckiH9yo1QV2YtU0ssgNQ/o\nxfez6BqSTGL/+F4mRzz8BZ1YH21bJQY9aBv6dY/XY5j6eaupxRoeKEwPIxBRncdu\nHGnXwEd/S/+kwxKOasyAq/miSfXGsRYgaVpyd9nKIKM/SjBbzOK7Tpe3AoGAM5ew\nh2sfkPt1RBZB2rvFOjh8bVH7jm3nyJAIbsbgQppRtR3j1llwZFig+BNBN/fJu+BO\nVtmsAIkkxvrGDp+s8hUTg6YO+V3rw952yxusc3JVuNK0BZXd+730eYD9AXyKmqCQ\nF5HScpXiWz9qapDk7kvU5bX1f2ka4rgC5k0ovoECgYEAnDVilhS+/Cx4B5Jk+25J\n0UGXkRR27fdK2xUFwAUX04POQe/aVQajj804yF2GmUV4aa/09vC5lAIn5ByN9pcm\nhinnsSIFsVw9NrxH/OHGHKyXIGvM8uXT0HG2W+oHxrNyR3iDZiYxFMjPBDs6PdLt\nexFcAjKEfaY1ne5as9HTDII=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mydriveserve@inner-geography-333815.iam.gserviceaccount.com",
+  "client_id": "102785382391760593365",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mydriveserve%40inner-geography-333815.iam.gserviceaccount.com"
+}
