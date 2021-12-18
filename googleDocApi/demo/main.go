@@ -42,10 +42,10 @@ func sheet(path, id string) {
 		return
 	}
 	d := sheets.NewSpreadsheetsValuesService(docsvc)
-	document, err := d.BatchGet(id).Do()
+	document, err := d.Get(id, "A1:Z200").Do()
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(document.ValueRanges)
+	fmt.Println(document.Values)
 }
