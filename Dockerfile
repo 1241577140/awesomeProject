@@ -1,7 +1,7 @@
 FROM golang:1.16-alpine as builder
 
 ENV GO111MODULE=on \
-    GOPROXY=https://goproxy.cn,direct \
+    GOPROXY=https://goproxy.io,direct \
     GIN_MODE=release \
     PORT=80
 
