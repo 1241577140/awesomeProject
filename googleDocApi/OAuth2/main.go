@@ -1,15 +1,20 @@
 package main
 
 import (
+	"cloud.google.com/go/pubsub"
 	"context"
 	"fmt"
-	"os"
-
-	"cloud.google.com/go/pubsub"
-	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
+	"net/url"
+	"os"
+
+	"golang.org/x/oauth2"
 )
+
+func main() {
+	fmt.Println(oauthClient())
+}
 
 // oauthClient shows how to use an OAuth client ID to authenticate as an end-user.
 func oauthClient() error {
@@ -19,26 +24,30 @@ func oauthClient() error {
 	// created the client ID.
 	redirectURL := os.Getenv("OAUTH2_CALLBACK")
 	if redirectURL == "" {
-		redirectURL = "http://localhost:8080"
+		redirectURL = "http://localhost:3080"
 	}
 	config := &oauth2.Config{
-		ClientID:     "714842259881-97khn33kah9q33e9qeql9e6m4bkqockn.apps.googleusercontent.com",
-		ClientSecret: "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",
+		ClientID:     "487707921124-isu7q87rfeanp3d204ql95lbo4skdjl4.apps.googleusercontent.com",
+		ClientSecret: "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",
 		RedirectURL:  redirectURL,
 		Scopes:       []string{"email", "profile"},
 		Endpoint:     google.Endpoint,
 	}
 
 	// Dummy authorization flow to read auth code from stdin.
-	authURL := config.AuthCodeURL("your state")
-	fmt.Printf("Follow the link in your browser to obtain auth code: %s", authURL)
+	//authURL := config.AuthCodeURL("your state")
+	//fmt.Printf("Follow the link in your browser to obtain auth code:\n %s \n", authURL)
 
 	// Read the authentication code from the command line
-	//var code string
+	u, _ := url.Parse("http://localhost:3080/?state=your+state&code=4%2F0AX4XfWgOQN4OVSt-0Iko78Iil3XI1J4OGA4HqMXHnkSEm61f4u19LlGOcoM710XEXVcjMA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent")
+	m, _ := url.ParseQuery(u.RawQuery)
+	fmt.Println(m["code"][0])
+	var code string
+	code = m["code"][0]
 	//fmt.Scanln(&code)
-
+	code = "4%2F0AX4XfWgOQN4OVSt-0Iko78Iil3XI1J4OGA4HqMXHnkSEm61f4u19LlGOcoM710XEXVcjMA"
 	// Exchange auth code for OAuth token.
-	token, err := config.Exchange(ctx, "4%2F0AX4XfWiqI2Tz1IpItvUlCmaLo6qMAakAH4TSwkalLo7-YkZfbh5-5BFyXqIx9caAl9_EiA")
+	token, err := config.Exchange(ctx, code)
 	if err != nil {
 		return fmt.Errorf("config.Exchange: %v", err)
 	}
@@ -50,9 +59,5 @@ func oauthClient() error {
 
 	// Use the authenticated client.
 	_ = client
-
 	return nil
-}
-func main() {
-	oauthClient()
 }
