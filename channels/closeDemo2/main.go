@@ -20,11 +20,8 @@ func main() {
 	// It must be a buffered channel.
 	toStop := make(chan string, 1)
 
-	var stoppedBy string
-
 	// moderator
 	go func() {
-		stoppedBy = <-toStop
 		close(stopCh)
 	}()
 

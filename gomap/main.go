@@ -14,4 +14,8 @@ func main() {
 	fmt.Println(len(mm))
 	mm[7] = 7
 	fmt.Println(len(mm))
+	for k := range mm {
+		delete(mm, k)
+	}
+	fmt.Println(len(mm))
 }

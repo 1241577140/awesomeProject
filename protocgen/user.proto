@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package main;
+
+message Info {
+  oneof value {
+    string user = 1;
+    string name = 2;
+  }
+}
