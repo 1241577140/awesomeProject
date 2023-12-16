@@ -1,6 +1,6 @@
 module awesomeProject
 
-go 1.17
+go 1.18
 
 require (
 	cloud.google.com/go/pubsub v1.30.0
@@ -11,6 +11,7 @@ require (
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/gogf/gf/v2 v2.0.6
 	github.com/gorilla/websocket v1.5.0
+	github.com/jmoiron/sqlx v1.3.5
 	github.com/json-iterator/go v1.1.12
 	github.com/panjf2000/gnet v1.6.6
 	github.com/prometheus/common v0.10.0
@@ -32,17 +33,13 @@ require (
 	github.com/google/pprof v0.0.0-20230228050547-1710fef4ab10 // indirect
 	github.com/google/s2a-go v0.1.4 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.2.3 // indirect
-	github.com/jmoiron/sqlx v1.3.5 // indirect
 	github.com/onsi/ginkgo/v2 v2.9.0 // indirect
 	github.com/quic-go/qtls-go1-19 v0.3.2 // indirect
 	github.com/quic-go/qtls-go1-20 v0.2.2 // indirect
 	github.com/quic-go/quic-go v0.34.0 // indirect
+	github.com/stretchr/testify v1.8.2 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230530153820-e85fd2cbaebc // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230530153820-e85fd2cbaebc // indirect
-	gorm.io/datatypes v1.2.0 // indirect
-	gorm.io/gen v0.3.24 // indirect
-	gorm.io/hints v1.1.2 // indirect
-	gorm.io/plugin/dbresolver v1.5.0 // indirect
 )
 
 require (
@@ -73,7 +70,7 @@ require (
 	github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/golang/protobuf v1.5.3
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/uuid v1.3.0 // indirect

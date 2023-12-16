@@ -3,8 +3,9 @@ package main
 import (
 	"embed"
 	_ "embed"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 //go:embed preview.gif
